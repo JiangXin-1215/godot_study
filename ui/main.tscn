@@ -87,9 +87,17 @@ offset_right = 647.0
 offset_bottom = 243.0
 text = "光照相关"
 
+[node name="ColiisionStudy" type="Button" parent="."]
+offset_left = 674.0
+offset_top = 212.0
+offset_right = 746.0
+offset_bottom = 243.0
+text = "碰撞相关"
+
 [connection signal="pressed" from="NodeStudy" to="." method="OnNodeStudyButtonPressed"]
 [connection signal="pressed" from="SceneStudy" to="." method="OnSceneStudyButtonPressed"]
 [connection signal="pressed" from="SpriteStudy" to="." method="OnSpriteStudyButtonPressed"]
 [connection signal="pressed" from="GroupStudy" to="." method="OnGroupStudyButtonPressed"]
 [connection signal="pressed" from="AnimateStudy" to="." method="OnAnimateStudyButtonPressed"]
 [connection signal="pressed" from="LightStudy" to="." method="OnLightStudyButtonPressed"]
+[connection signal="pressed" from="ColiisionStudy" to="." method="OnCollisionStudyButtonPressed"]
