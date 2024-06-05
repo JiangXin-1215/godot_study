@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwrp0qrq3t8hw"]
+
+[ext_resource type="Script" path="res://scripts/Main.cs" id="1_27nse"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_27nse")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 474.0
+offset_top = 4.0
+offset_right = 666.0
+offset_bottom = 92.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.243137, 0.568627, 0.682353, 1)
+theme_override_font_sizes/font_size = 64
+text = "主场景"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 1.0
+offset_top = 86.0
+offset_right = 1145.0
+offset_bottom = 146.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.901961, 0.545098, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "其他场景中按ESC返回主场景，不单独写返回了"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="NodeStudy" type="Button" parent="."]
+offset_left = 17.0
+offset_top = 209.0
+offset_right = 89.0
+offset_bottom = 240.0
+text = "节点相关"
+
+[node name="SceneStudy" type="Button" parent="."]
+offset_left = 111.0
+offset_top = 209.0
+offset_right = 183.0
+offset_bottom = 240.0
+text = "节点相关"
+
+[connection signal="pressed" from="NodeStudy" to="." method="OnNodeStudyButtonPressed"]
+[connection signal="pressed" from="SceneStudy" to="." method="OnSceneStudyButtonPressed"]
