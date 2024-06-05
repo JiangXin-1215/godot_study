@@ -38,7 +38,7 @@ theme_override_font_sizes/font_size = 30
 text = "上下左右移动玩家，发生碰撞时玩家上下翻转，离开时翻转回来"
 
 [node name="Player" type="Sprite2D" parent="."]
-position = Vector2(221, 318)
+position = Vector2(178, 431)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_sg5hv")
 script = ExtResource("2_fd0n7")
@@ -52,7 +52,7 @@ position = Vector2(10, 10)
 shape = SubResource("CapsuleShape2D_pkh2d")
 
 [node name="NPC" type="Sprite2D" parent="."]
-position = Vector2(595, 303)
+position = Vector2(916, 226)
 texture = ExtResource("3_5hqgk")
 metadata/_edit_group_ = true
 

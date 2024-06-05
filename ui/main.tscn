@@ -94,6 +94,13 @@ offset_right = 746.0
 offset_bottom = 243.0
 text = "碰撞相关"
 
+[node name="PhyColiisionStudy" type="Button" parent="."]
+offset_left = 775.0
+offset_top = 211.0
+offset_right = 847.0
+offset_bottom = 242.0
+text = "物理碰撞"
+
 [connection signal="pressed" from="NodeStudy" to="." method="OnNodeStudyButtonPressed"]
 [connection signal="pressed" from="SceneStudy" to="." method="OnSceneStudyButtonPressed"]
 [connection signal="pressed" from="SpriteStudy" to="." method="OnSpriteStudyButtonPressed"]
@@ -101,3 +108,4 @@ text = "碰撞相关"
 [connection signal="pressed" from="AnimateStudy" to="." method="OnAnimateStudyButtonPressed"]
 [connection signal="pressed" from="LightStudy" to="." method="OnLightStudyButtonPressed"]
 [connection signal="pressed" from="ColiisionStudy" to="." method="OnCollisionStudyButtonPressed"]
+[connection signal="pressed" from="PhyColiisionStudy" to="." method="OnPhyCollisionStudyButtonPressed"]

@@ -84,4 +84,12 @@ public partial class Main : Node2D
 		//跳转场景方法1
 		st.ChangeSceneToFile("res://ui/collision_study.tscn");
 	}
+
+	public void OnPhyCollisionStudyButtonPressed()
+	{
+		//获取场景树
+		SceneTree st = GetTree();
+		//跳转场景方法1
+		st.ChangeSceneToFile("res://ui/phy_collision_study.tscn");
+	}
 }
