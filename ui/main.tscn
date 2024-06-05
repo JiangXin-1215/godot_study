@@ -101,6 +101,13 @@ offset_right = 847.0
 offset_bottom = 242.0
 text = "物理碰撞"
 
+[node name="NavStudy" type="Button" parent="."]
+offset_left = 881.0
+offset_top = 212.0
+offset_right = 953.0
+offset_bottom = 243.0
+text = "自动寻径"
+
 [connection signal="pressed" from="NodeStudy" to="." method="OnNodeStudyButtonPressed"]
 [connection signal="pressed" from="SceneStudy" to="." method="OnSceneStudyButtonPressed"]
 [connection signal="pressed" from="SpriteStudy" to="." method="OnSpriteStudyButtonPressed"]
@@ -109,3 +116,4 @@ text = "物理碰撞"
 [connection signal="pressed" from="LightStudy" to="." method="OnLightStudyButtonPressed"]
 [connection signal="pressed" from="ColiisionStudy" to="." method="OnCollisionStudyButtonPressed"]
 [connection signal="pressed" from="PhyColiisionStudy" to="." method="OnPhyCollisionStudyButtonPressed"]
+[connection signal="pressed" from="NavStudy" to="." method="OnNavStudyButtonPressed"]
