@@ -1,0 +1,98 @@
+[gd_scene load_steps=5 format=3 uid="uid://ivcqeui0qly8"]
+
+[ext_resource type="Script" path="res://scripts/group_study/GroupStudy.cs" id="1_0l2ct"]
+[ext_resource type="Texture2D" uid="uid://78p8jpfnw7w2" path="res://mylogo.png" id="1_c2squ"]
+[ext_resource type="Texture2D" uid="uid://dmq264v01pckx" path="res://icon.svg" id="2_r6b1o"]
+[ext_resource type="Script" path="res://scripts/group_study/NPC.cs" id="3_xse4p"]
+
+[node name="GroupStudy" type="Node2D"]
+position = Vector2(194, 332)
+script = ExtResource("1_0l2ct")
+
+[node name="Player" type="Sprite2D" parent="." groups=["玩家"]]
+position = Vector2(29, -18)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_c2squ")
+
+[node name="Other1" type="Sprite2D" parent="." groups=["NPC"]]
+position = Vector2(589, -253)
+texture = ExtResource("2_r6b1o")
+script = ExtResource("3_xse4p")
+
+[node name="Other2" type="Sprite2D" parent="." groups=["NPC"]]
+position = Vector2(583, -17)
+texture = ExtResource("2_r6b1o")
+script = ExtResource("3_xse4p")
+
+[node name="Other3" type="Sprite2D" parent="." groups=["NPC"]]
+position = Vector2(586, 205)
+texture = ExtResource("2_r6b1o")
+script = ExtResource("3_xse4p")
+
+[node name="Other4" type="Sprite2D" parent="." groups=["NPC"]]
+position = Vector2(821, -121)
+texture = ExtResource("2_r6b1o")
+script = ExtResource("3_xse4p")
+
+[node name="Other5" type="Sprite2D" parent="." groups=["NPC"]]
+position = Vector2(828, 85)
+texture = ExtResource("2_r6b1o")
+script = ExtResource("3_xse4p")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -153.0
+offset_top = -313.0
+offset_right = 359.0
+offset_bottom = -225.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.243137, 0.568627, 0.682353, 1)
+theme_override_font_sizes/font_size = 64
+text = "节点分组"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -145.0
+offset_top = -225.0
+offset_right = 291.0
+offset_bottom = -176.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "通过分组实现统一调用某方法"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -148.0
+offset_top = -181.0
+offset_right = 288.0
+offset_bottom = -132.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "按左NPC上下翻转"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -147.0
+offset_top = -131.0
+offset_right = 289.0
+offset_bottom = -82.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "按右玩家上下翻转"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -50,7 +50,46 @@ offset_left = 111.0
 offset_top = 209.0
 offset_right = 183.0
 offset_bottom = 240.0
-text = "节点相关"
+text = "场景相关"
+
+[node name="SpriteStudy" type="Button" parent="."]
+offset_left = 203.0
+offset_top = 210.0
+offset_right = 275.0
+offset_bottom = 241.0
+text = "精灵相关"
+
+[node name="GroupStudy" type="Button" parent="."]
+offset_left = 294.0
+offset_top = 211.0
+offset_right = 366.0
+offset_bottom = 242.0
+text = "分组相关"
+
+[node name="SignalStudy" type="Button" parent="."]
+offset_left = 386.0
+offset_top = 211.0
+offset_right = 458.0
+offset_bottom = 242.0
+text = "信号相关"
+
+[node name="AnimateStudy" type="Button" parent="."]
+offset_left = 481.0
+offset_top = 211.0
+offset_right = 553.0
+offset_bottom = 242.0
+text = "动画相关"
+
+[node name="LightStudy" type="Button" parent="."]
+offset_left = 575.0
+offset_top = 212.0
+offset_right = 647.0
+offset_bottom = 243.0
+text = "光照相关"
 
 [connection signal="pressed" from="NodeStudy" to="." method="OnNodeStudyButtonPressed"]
 [connection signal="pressed" from="SceneStudy" to="." method="OnSceneStudyButtonPressed"]
+[connection signal="pressed" from="SpriteStudy" to="." method="OnSpriteStudyButtonPressed"]
+[connection signal="pressed" from="GroupStudy" to="." method="OnGroupStudyButtonPressed"]
+[connection signal="pressed" from="AnimateStudy" to="." method="OnAnimateStudyButtonPressed"]
+[connection signal="pressed" from="LightStudy" to="." method="OnLightStudyButtonPressed"]

@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmle1wcw51yn"]
+
+[ext_resource type="Script" path="res://scripts/SignalStudy.cs" id="1_r6q3v"]
+
+[node name="SignalStudy" type="Node2D"]
+script = ExtResource("1_r6q3v")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 474.0
+offset_top = 4.0
+offset_right = 666.0
+offset_bottom = 92.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.243137, 0.568627, 0.682353, 1)
+theme_override_font_sizes/font_size = 64
+text = "信号相关"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 217.0
+offset_top = 93.0
+offset_right = 943.0
+offset_bottom = 202.0
+theme_override_font_sizes/font_size = 64
+text = "按下左发射MySignal信号"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelHint" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 329.0
+offset_top = 277.0
+offset_right = 841.0
+offset_bottom = 365.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 64
+text = "按下左后提示会变"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="MySignal" from="." to="." method="OnSignal"]

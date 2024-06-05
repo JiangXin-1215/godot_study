@@ -9,6 +9,9 @@ public partial class Main : Node2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		//可在编辑器界面直接绑定按钮事件
+		//也可用代码绑定按钮事件
+		GetNode<Button>("SignalStudy").Connect("pressed", new Callable(this, "OnSignalStudyButtonPressed"));
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -32,5 +35,45 @@ public partial class Main : Node2D
 		SceneTree st = GetTree();
 		//跳转场景方法1
 		st.ChangeSceneToFile("res://ui/scene_study.tscn");
+	}
+
+	public void OnSpriteStudyButtonPressed()
+	{
+		//获取场景树
+		SceneTree st = GetTree();
+		//跳转场景方法1
+		st.ChangeSceneToFile("res://ui/sprite_study.tscn");
+	}
+
+	public void OnGroupStudyButtonPressed()
+	{
+		//获取场景树
+		SceneTree st = GetTree();
+		//跳转场景方法1
+		st.ChangeSceneToFile("res://ui/group_study.tscn");
+	}
+
+	public void OnSignalStudyButtonPressed()
+	{
+		//获取场景树
+		SceneTree st = GetTree();
+		//跳转场景方法1
+		st.ChangeSceneToFile("res://ui/signal_study.tscn");
+	}
+
+	public void OnAnimateStudyButtonPressed()
+	{
+		//获取场景树
+		SceneTree st = GetTree();
+		//跳转场景方法1
+		st.ChangeSceneToFile("res://ui/animate_study.tscn");
+	}
+
+	public void OnLightStudyButtonPressed()
+	{
+		//获取场景树
+		SceneTree st = GetTree();
+		//跳转场景方法1
+		st.ChangeSceneToFile("res://ui/light_study.tscn");
 	}
 }

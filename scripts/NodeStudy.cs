@@ -1,11 +1,33 @@
 using Godot;
 using System;
-
+//脚本挂载在某个节点上this就是这个节点
 public partial class NodeStudy : Node2D
 {
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		//以精灵为例
+		Node2D sprite = GetNode<Node2D>("Sprite2D");
+		//CanvasItem常用属性
+		//是否可见
+		sprite.Visible = true;
+		//渲染顺序
+		//数值越大越靠前
+		sprite.ZIndex = 300;
+		//取消相对渲染便于理解
+		sprite.ZAsRelative = false;
+		//Node2D常用属性
+		//位置
+		// sprite.Position = new Vector2(100, 100);
+		//旋转
+		//弧度?
+		// sprite.Rotation = 0.1f;
+		//角度
+		// sprite.RotationDegrees = 45;
+		//缩放
+		sprite.Scale = new Vector2(2, 2);
+		//倾斜 0为正常 负数为左倾 正数为右倾
+		sprite.Skew = 0;
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -50,5 +72,11 @@ public partial class NodeStudy : Node2D
 			//跳转主场景
 			st.ChangeSceneToFile("res://ui/main.tscn");
 		}
+
+		//获取鼠标位置
+		var pos = GetGlobalMousePosition();
+		//看向某个点
+		Node2D myLogo = GetNode<Node2D>("Sprite2D");
+		myLogo.LookAt(pos);
 	}
 }
